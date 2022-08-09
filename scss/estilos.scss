@@ -3,10 +3,79 @@
 // font-family: 'Montserrat', sans-serif;
 
 
+$color1: black;
+$color2: white;
+$color3: rosybrown;
+$color4: rgb(70, 70, 70);
+
+
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: $color2;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px $color3;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px $color3;
+    background-color: $color3;
+}
 
+::selection {
+    background-color: $color3;
+    color: $color1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.titulo {
+    height: 75px;
+    width: 100%;
+    padding: 15px;
+    background-color: $color1;
+    color: $color3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    @extend .titulo;
+
+    a:hover {
+        color: $color3;
+    }
+
+    .dropdown-menu {
+        background-color: $color1;
+
+        .dropdown-item {
+            @extend .dropdown-menu;
+        }
+        a:hover {
+            color: $color3;
+        }
+    }
+
+    a {
+        color: $color2;
+    }
+}
+.marginbottom {
+    margin-bottom: 100px;
+}
+
+.nuevatem {
+    @extend .titulo;
+    margin-bottom: 100px;
+}

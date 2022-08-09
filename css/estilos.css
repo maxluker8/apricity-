@@ -3,3 +3,47 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: white; }
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rosybrown; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rosybrown;
+  background-color: rosybrown; }
+
+::selection {
+  background-color: rosybrown;
+  color: black; }
+
+html {
+  scroll-behavior: smooth; }
+
+.titulo, .navbar, .nuevatem {
+  height: 75px;
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  color: rosybrown;
+  font-family: 'Montserrat', sans-serif; }
+
+.navbar a:hover {
+  color: rosybrown; }
+
+.navbar .dropdown-menu, .navbar .dropdown-menu .dropdown-item {
+  background-color: black; }
+  .navbar .dropdown-menu a:hover {
+    color: rosybrown; }
+
+.navbar a {
+  color: white; }
+
+.marginbottom {
+  margin-bottom: 100px; }
+
+.nuevatem {
+  margin-bottom: 100px; }
