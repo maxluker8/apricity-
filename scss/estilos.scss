@@ -131,6 +131,7 @@ $color: (
 footer {
     @extend .titulo;
     height: 300px;
+    margin-top: 80px;
     
     h6 {
         color: $color2;

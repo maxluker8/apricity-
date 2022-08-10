@@ -82,7 +82,8 @@ a:hover {
   padding: 15px; }
 
 footer {
-  height: 300px; }
+  height: 300px;
+  margin-top: 80px; }
   footer h6 {
     color: white;
     margin: 10px; }
