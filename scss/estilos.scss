@@ -127,3 +127,23 @@ $color: (
 .row {
     @include cards;
 }
+
+footer {
+    @extend .titulo;
+    height: 300px;
+    
+    h6 {
+        color: $color2;
+        margin: 10px;
+    }
+    i {
+        color: $color2;
+        margin: 10px;
+    }
+
+    img {
+        height: 25px;
+        width: 35px;
+        margin: 1.5px;
+    }
+}
