@@ -47,3 +47,36 @@ html {
 
 .nuevatem {
   margin-bottom: 100px; }
+
+.card-group {
+  max-width: 85%;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 50px; }
+  .card-group .card {
+    padding: 15px;
+    margin: 20px; }
+    .card-group .card .btn-primary {
+      background-color: black;
+      border: black solid 2px; }
+    .card-group .card .btn-primary:hover {
+      background-color: #464646;
+      color: rosybrown;
+      border: #464646; }
+
+a {
+  color: black; }
+
+a:hover {
+  color: rosybrown; }
+
+.subh3 {
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 50px; }
+
+.row {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  border-radius: 10px;
+  padding: 15px; }

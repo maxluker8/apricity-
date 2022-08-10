@@ -8,7 +8,12 @@ $color2: white;
 $color3: rosybrown;
 $color4: rgb(70, 70, 70);
 
-
+@mixin cards {
+    font-family: 'Montserrat', sans-serif;
+    color: $color1;
+    border-radius: 10px;
+    padding: 15px;
+}
 
 
 * {
@@ -78,4 +83,47 @@ html {
 .nuevatem {
     @extend .titulo;
     margin-bottom: 100px;
+}
+
+.card-group {
+    max-width: 85%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+
+    .card {
+        padding: 15px;
+        margin: 20px;
+
+        .btn-primary {
+            background-color: $color1;
+            border: $color1 solid 2px;
+        }
+        .btn-primary:hover {
+            background-color: $color4;
+            color: $color3;
+            border: $color4;
+        }
+    }
+}
+a {
+    color: $color1;
+}
+a:hover{
+    color:$color3;
+}
+
+$color: (
+    backcolor: white,
+    textcolor: black
+);
+
+.subh3 {
+    background-color: map-get($color, backcolor);
+    color: map-get($color, textcolor);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+
+.row {
+    @include cards;
 }
